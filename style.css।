@@ -1,0 +1,13 @@
+
+let cartCount = 0;
+
+document.querySelectorAll(".product button").forEach(button => {
+  button.addEventListener("click", function() {
+    cartCount++;
+    this.textContent = "যোগ হয়েছে ✓";
+
+    alert(
+      "পণ্যটি কার্টে যোগ হয়েছে! মোট পণ্য: " + cartCount
+    );
+  });
+});
